@@ -1,4 +1,4 @@
-package com.telusko.SpringAIOllama;
+package com.telusko.SpringAIOllama.config;
 
 import org.springframework.ai.embedding.EmbeddingModel;
 import org.springframework.ai.vectorstore.SimpleVectorStore;

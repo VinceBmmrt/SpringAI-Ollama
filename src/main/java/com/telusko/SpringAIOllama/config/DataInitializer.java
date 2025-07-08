@@ -1,4 +1,4 @@
-package com.telusko.SpringAIOllama;
+package com.telusko.SpringAIOllama.config;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.ai.document.Document;

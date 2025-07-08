@@ -1,4 +1,4 @@
-package com.telusko.SpringAIOllama;
+package com.telusko.SpringAIOllama.controller;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.memory.ChatMemory;
