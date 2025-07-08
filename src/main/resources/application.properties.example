@@ -1,0 +1,26 @@
+# Application name
+spring.application.name=SpringAICode
+
+# OpenAI API key and embedding model
+spring.ai.openai.api-key=YOUR_OPENAI_API_KEY
+spring.ai.openai.embedding.options.model=text-embedding-ada-002
+
+# Uncomment this line to use Ollama local AI model (and comment OpenAI API key above)
+# spring.ai.ollama.chat.options.model=mistral:latest
+
+# PostgreSQL datasource configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/telusko-pg-vector-store
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.jpa.hibernate.show-sql=true
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Initialize database schema from classpath
+spring.sql.init.schema-locations=classpath:init/schema.sql
+spring.sql.init.mode=always
+
+# Allow bean overriding
+spring.main.allow-bean-definition-overriding=true
+
+# Exclude Ollama autoconfiguration unless using Ollama
+spring.autoconfigure.exclude=org.springframework.ai.model.ollama.autoconfigure.OllamaEmbeddingAutoConfiguration
