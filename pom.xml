@@ -9,6 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.telusko</groupId>
+    
     <artifactId>SpringAI-Ollama</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringAI-Ollama</name>
@@ -47,6 +48,13 @@
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-starter-vector-store-pgvector</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-docker-compose</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
